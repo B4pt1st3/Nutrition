@@ -1,0 +1,25 @@
+body{
+background-color:burlywood;
+}
+
+#menu{
+list-style: none;
+display:block;
+
+}
+
+li{
+	margin :15px auto;
+	list-style: none;
+
+
+	height:25px;
+	float:left;
+	padding: 0 25px;
+	background-color:black;
+}
+
+a{
+	color:white;
+}
+
