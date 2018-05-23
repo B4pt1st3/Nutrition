@@ -1,0 +1,16 @@
+<p>
+  Menu : sandwich !
+</p>
+<ul *ngFor="let e of alimentTest">
+  <li>{{e.nom+' '+e.date}}</li>
+  <button (click)="editAliment(e.id)">Edit</button>
+</ul>
+<div *ngIf="edit">
+  <input [(ngModel)]="alimentNew.nom" />
+  <input type ="date" [(ngModel)]="alimentNew.date" />
+  <button (click)="saveAliment(e.id)">Sauvegarder</button>
+</div>
+
+<input [(ngModel)]="alimentNew.nom" />
+
+<button (click)="addAliment()">Ajouter</button>
